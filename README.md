@@ -9,8 +9,8 @@
 
 ### Notes on running the script
 
-* In order to process the data, run script run_analysis.R. 
-* The script asumes that the UCI HAR Dataset folder is in the working directory. 
+* In order to process the data, run script *run_analysis.R*. 
+* The script assumes that the UCI HAR Dataset folder is in the working directory. 
 
 
 ###How the script works: Transformations done on the original data
@@ -28,9 +28,9 @@ The following transformations were done on the original data and are performed b
 5. Changing the values of the activity labels from integer to the set (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) by converting the int variable into a factor and renaming the levels. 
 
 6. Changing the variable names to be more descriptive. Due to the length of the variable names I have used the lowerCamelCase convention to make them more readable (see http://journal.r-project.org/archive/2012-2/RJournal_2012-2_Baaaath.pdf) rather than using lower case only. Also, some names have been adapted according to the feature description file. In particular the steps followed were: 
-+ remove (,),-
-+ capitalize first letter of “mean” and “std”
-+ change the string “BodyBody” in some of the vars to “Body”
+  + remove (,),-
+  + capitalize first letter of “mean” and “std”
+  + change the string “BodyBody” in some of the vars to “Body”
 
 7. Creating a second, independent tidy data set with the average of each  variable for each activity and each subject, resulting in 180 obs. of  68 variables. 
  
